@@ -1,0 +1,24 @@
+{
+  "name": "routex402-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for Routex402 — verified payment reputation for AI agents on Solana. Use in Claude Desktop, Cursor, VS Code.",
+  "license": "MIT",
+  "type": "module",
+  "bin": { "routex402-mcp": "./dist/server.js" },
+  "files": ["dist", "README.md", "LICENSE"],
+  "scripts": {
+    "build": "tsc && chmod +x dist/server.js",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": { "type": "git", "url": "https://github.com/msurfx/routex402-mcp.git" },
+  "homepage": "https://routex402.xyz",
+  "keywords": ["mcp", "model-context-protocol", "solana", "agents", "reputation", "claude"],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "routex402-sdk": "^0.1.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.0",
+    "@types/node": "^22.0.0"
+  }
+}
